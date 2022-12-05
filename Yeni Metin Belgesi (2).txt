@@ -1,0 +1,27 @@
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Tools
+Microsoft.EntityFrameworkCore.SqlServer 
+
+-Program.cs ve appsettings.json 
+-New Folder->Context->MyContext.cs --DbContext (miras)
+-New Folder->Data->BaseInt.cs & BaseStr.cs 
+            >Data->City.cs - County.cs - Department.cs - Personel.cs --BaseInt (miras)
+            >Data->Grade.cs --BaseStr (miras)
+
+-Bağlantıları Tanımla
+
+-Add-Migration ilk -> Update-Database
+
+ileri repository de tüm metotlar repositoryde tutulur.
+
+-New Folder->Core->IBaseRepository.cs (interface)
+-New Folder->Core->BaseRepository.cs --IBaseRepository.cs (miras)
+
+-New Folder->Repository->New Folder ->Abstract->Irepository.cs (interface)
+            >Repository->Concretes  
+ 
+-New Folder->DTO->PersonelDepartmentList.cs
+            >DTO->PersonelGradeList.cs
+
+BaseRepository oluşturmak için IBaseRepository oluşturduk.
+Ek metotlar için ise Irepository ile PersonelRep oluşturduk.
